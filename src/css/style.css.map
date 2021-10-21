@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,MAAM;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/blocks/_interface.sass",
+        "../sass/blocks/_colors.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
