@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: sans-serif;
 }
@@ -20,7 +21,13 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 95%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 320px;
   }
 }
 
@@ -31,6 +38,7 @@ img {
   padding: 18px 30px;
 }
 
+/*Импорт стилей шапки*/
 .navbar {
   padding: 8px 0;
 }
@@ -90,6 +98,118 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+/*Импорт стилей главного экрана*/
+.hero {
+  padding: 50px 0;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 140px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.hero-text__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 69px;
+  display: inline-block;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.hero-list__text {
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-block-list {
+    margin-bottom: 44px;
+  }
+  .hero-block-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-text-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-text-list__text {
+    font-size: 12px;
+  }
+  .hero-text-list__image {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 567px) {
+  .hero-text {
+    padding: 10px;
+  }
+  .hero-list__image {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
