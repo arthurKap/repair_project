@@ -267,6 +267,9 @@ img {
   .hero-list__image {
     margin-right: 10px;
   }
+  .hero-list__text {
+    max-width: 200px;
+  }
 }
 
 /*Импорт стилей для offer*/
@@ -294,7 +297,7 @@ img {
 }
 
 .offer__title {
-  width: 360px;
+  max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
 }
@@ -313,9 +316,39 @@ img {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 2px solid #ffd200;
+  outline: none;
+}
+
 .offer__button {
   width: 100%;
   min-height: 70px;
+}
+
+.offer__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 31px;
+}
+
+.offer__text {
+  max-width: 200px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer__phone {
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {

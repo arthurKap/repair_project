@@ -16,7 +16,7 @@
     padding-right: 90px
     position: relative
   &__title
-    width: 360px
+    max-width: 360px
     line-height: 35px
     margin-bottom: 24px
   &__subtitle
@@ -27,9 +27,26 @@
     width: 240px
     &:first-child
       margin-right: 10px
+    &:focus
+      border: 2px solid #ffd200
+      outline: none
   &__button
     width: 100%
     min-height: 70px
+  &__texts
+    display: flex
+    justify-content: space-between
+    margin-top: 31px
+  &__text
+    max-width: 200px
+    font-size: 15px
+    line-height: 24px
+  &__phone
+    text-decoration: none
+    color: $text-color
+    font-size: 15px
+    line-height: 24px
+    +bold
 @media ( max-width: 1200px )
   .offer
     background-size: cover
