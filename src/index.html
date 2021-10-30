@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -24,7 +25,7 @@
             <a href="tel:+74954225131" class="navbar__phone">+7 (495) 422-51-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -73,6 +74,8 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
+
+
     <section class="offer section">
       <div class="container">
         <div class="offer-block">
@@ -103,6 +106,18 @@
     </section>
     <!-- /.offer -->
   </main>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
