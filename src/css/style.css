@@ -20,6 +20,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -374,6 +378,21 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .offer__texts {
+    display: block;
+  }
+  .offer__text {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .offer__text:last-child {
+    padding-bottom: 0;
+  }
+}
+
 /*Стили модельного окна*/
 .modal {
   position: fixed;
@@ -405,5 +424,39 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/*Стили скролла на вверх*/
+.scrollTop {
+  background: #ffd200;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  color: #000000;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .04s;
+  transition: all .04s;
+}
+
+.scrollTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 0.8;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
