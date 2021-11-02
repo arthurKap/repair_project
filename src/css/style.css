@@ -74,14 +74,17 @@ img {
 }
 
 .section-title {
+  text-align: center;
   font-size: 24px;
+  max-width: 500px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
 .section-subtitle {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .input {
@@ -304,11 +307,14 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
   width: 250px;
   margin-bottom: 30px;
+  text-align: left;
+  font-size: 16px;
 }
 
 .offer__input {
@@ -393,7 +399,7 @@ img {
   }
 }
 
-/*Стили модельного окна*/
+/*Стили модального окна*/
 .modal {
   position: fixed;
   left: 0;
@@ -458,5 +464,132 @@ img {
   pointer-events: auto;
   opacity: 0.8;
   cursor: pointer;
+}
+
+/*Стили для секции со свайпером*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/bcg.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio-title {
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.swiper-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 68px;
+  padding-bottom: 100px;
+}
+
+.swiper-button-left, .swiper-button-right {
+  cursor: pointer;
+}
+
+/*Стили для секции с ценами*/
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover .card__image:before {
+  opacity: 0.8;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+}
+
+.card__link:hover::after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-img {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

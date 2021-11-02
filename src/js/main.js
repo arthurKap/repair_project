@@ -16,7 +16,7 @@ close.addEventListener('click', function() {
 setInterval(function() {
    modal.classList.remove('modal_active');
 }, 5000);
-//Модельное окно
+//Модальное окно
 
 window .addEventListener("scroll", () => {
   if (window.pageYOffset > 100) {
@@ -28,3 +28,27 @@ window .addEventListener("scroll", () => {
 
 })
 //Скролл на вверх
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-left',
+    prevEl: '.swiper-button-right',
+  },
+  
+  slidesPerView: 3,
+  autoHeight: true,
+  spaceBetween: 30,
+
+});
