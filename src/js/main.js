@@ -46,6 +46,18 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-left',
     prevEl: '.swiper-button-right',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    569: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
   
   slidesPerView: 3,
   autoHeight: true,

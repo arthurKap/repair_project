@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <title>Document</title>
 </head>
@@ -121,7 +122,7 @@
     <div class="container">
       <h2 class="section-title portfolio-title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
       </h2>
-      <div class="swiper">
+      <div class="swiper wow fadeInUp" data-wow-delay="0.2s">
 
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper__item">
@@ -171,7 +172,7 @@
       <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
       <!-- /.section-subtitle price__subtitle -->
       <div class="cards">
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
           <div class="card__image">
             <img src="img/price/priceImage_1.jpg" alt="картинка" class="price-img">
           </div>
@@ -185,7 +186,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
           <div class="card__image">
             <img src="img/price/priceImage_2.jpg" alt="картинка" class="price-img">
           </div>
@@ -199,7 +200,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
           <div class="card__image">
             <img src="img/price/priceImage_3.jpg" alt="картинка" class="price-img">
           </div>
@@ -213,7 +214,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
           <div class="card__image">
             <img src="img/price/priceImage_4.jpg" alt="картинка" class="price-img">
           </div>
@@ -227,7 +228,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
           <div class="card__image">
             <img src="img/price/priceImage_5.jpg" alt="картинка" class="price-img">
           </div>
@@ -241,7 +242,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.7s">
           <div class="card__image">
             <img src="img/price/priceImage_6.jpg" alt="картинка" class="price-img">
           </div>
@@ -273,6 +274,10 @@
   <!-- scrollTop -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 
 </body>
