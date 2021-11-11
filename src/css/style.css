@@ -49,6 +49,10 @@ img {
     max-width: 580px;
     width: 90%;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -317,13 +321,17 @@ img {
   font-size: 16px;
 }
 
+.offer__inputs {
+  display: inline-block;
+}
+
+.offer__inputs:first-child {
+  margin-right: 10px;
+}
+
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
-}
-
-.offer__input:first-child {
-  margin-right: 10px;
 }
 
 .offer__input:focus {
@@ -359,6 +367,19 @@ img {
   line-height: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+input.invalid {
+  border: solid 1px red;
+}
+
+div.invalid {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -710,4 +731,183 @@ img {
             flex-direction: column;
   }
 }
+
+/*Стили для блока brif*/
+.brif {
+  background-image: url("../img/brif/brif_bg_orange.jpg"), url("../img/brif/brif_bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__input:focus {
+  border: 2px solid #ffd200;
+  outline: none;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.interview-list__text {
+  max-width: 400px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+}
+
+input.invalid-brif {
+  border: solid 1px red;
+}
+
+div.invalid-brif {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+  .form__description {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif_bg_orange.jpg"), url("../img/brif/brif_bg.jpg");
+    background-position: top center, center buttom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__interview {
+    padding: 0;
+    margin-top: 0px;
+  }
+  .brif__form {
+    margin-top: 10px;
+  }
+}
+
+/*Стили для блока other*/
 /*# sourceMappingURL=style.css.map */

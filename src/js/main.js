@@ -64,3 +64,76 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
 
 });
+
+
+/*Валидация формы offer*/ 
+$('#offer-form').validate({
+
+  errorClass: "invalid",
+
+  errorElement: "div",
+  
+  rules: {
+    username: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    phone: {
+      required: true
+    }
+  },
+  messages: {
+    username: {
+      required:"Заполните поле",
+      minlength: jQuery.validator.format("Минимум {0} символа!"),
+      maxlength: jQuery.validator.format("Максимум 15 символов!")
+    },
+    phone: {
+      required: "Заполните поле"
+    }, 
+  }
+  
+})
+
+
+
+/*Валидация формы brif*/ 
+$('#brif-form').validate({
+
+  errorClass: "invalid-brif",
+
+  errorElement: "div",
+  
+  rules: {
+    username: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    phone: {
+      required: true
+    },
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    username: {
+      required:"Заполните поле",
+      minlength: jQuery.validator.format("Минимум {2} символа!"),
+      maxlength: jQuery.validator.format("Максимум {15} символов!")
+    },
+    phone: {
+      required: "Заполните поле"
+    },
+    email: {
+      required: "Заполните поле",
+      email: "Пример name@domain.com",
+    } 
+  }
+  
+})
+
+$(".phone-input").mask("+38(099)999-99-99");
