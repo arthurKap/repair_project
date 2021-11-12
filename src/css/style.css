@@ -910,4 +910,115 @@ div.invalid-brif {
 }
 
 /*Стили для блока other*/
+/*Стили для footer*/
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__text {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__phone {
+  color: #333333;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+/*Стили для блока guarantee*/
+.guarantee__title {
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.guarantee-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guarantee-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  max-width: 270px;
+}
+
+.guarantee-list__image {
+  margin-bottom: 41px;
+}
+
+.guarantee-list__description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
