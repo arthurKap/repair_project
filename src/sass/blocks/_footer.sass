@@ -39,3 +39,25 @@
       font-size: 16px
       text-decoration: none
       +bold
+@media ( max-width: 768px)
+  .footer
+    position: relative
+  .map
+    width: 100%
+    left: 0
+    top: 535px
+  .contacts
+    flex-basis: 100%
+    padding-top: 0
+    padding-left: 0
+@media ( max-width: 320px )
+  .contacts
+    &__title
+      font-size: 18px
+      max-width: 275px
+      margin-bottom: 39px
+    &-list
+      &__item
+        margin-bottom: 39px
+        &:last-child
+          margin-bottom: 0

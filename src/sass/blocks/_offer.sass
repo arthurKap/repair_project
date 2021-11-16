@@ -75,10 +75,16 @@ div.invalid
     &-block
       width: 100%
       padding-right: 0
-@media (max-width: 567px)
+@media (max-width: 568px)
   .offer
+    &__title
+      font-size: 18px
+      line-height: 1.2
+    &__subtitle
+      font-size: 14px
     &__texts
-      display: block
+      display: flex
+      flex-direction: column
     &__text
       display: block
       margin: auto
@@ -86,3 +92,10 @@ div.invalid
       text-align: center
       &:last-child
         padding-bottom: 0
+@media ( max-width: 320px )
+  .offer
+    &__input
+      min-width: 288px
+    &__text
+      &:last-child
+        padding-bottom: 56px

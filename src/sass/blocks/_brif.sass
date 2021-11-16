@@ -102,11 +102,12 @@ div.invalid-brif
     &__description
       display: block
       text-align: center
+      padding-bottom: 34px
 @media (max-width: 768px)
   .brif
     background-image: url("../img/brif/brif_bg_orange.jpg"), url("../img/brif/brif_bg.jpg")
-    background-position: top center, center buttom
-    background-size: 100% 50%, cover
+    background-position: top center
+    background-size: 50% 50%, 100% 100%
     background-repeat: repeat-x, no-repeat
     &-block
       flex-direction: column
@@ -114,4 +115,33 @@ div.invalid-brif
       padding: 0
       margin-top: 0px
     &__form
+  .form
+    &__title
+      padding-top: 63px
       margin-top: 10px
+@media ( min-width: 320px )
+  .brif
+    &__form
+      padding-left: 0
+  .form
+    display: flex
+    flex-direction: column
+    &__title
+      font-size: 18px
+      margin-bottom: 27px
+    &__subtitle
+      font-size: 14px
+    &__description
+      font-size: 14px
+      max-width: 135px
+      margin: auto
+
+  .interview
+    &__title
+      margin-top:
+    &__subtitle
+      font-size: 14px
+      max-width: 190px
+    &-list
+      &__text
+        max-width: 235px

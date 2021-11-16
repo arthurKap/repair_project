@@ -58,6 +58,14 @@
     flex-wrap: wrap
 .price-img
   display: block
-// @media ( max-width: 768px )
-//   .cards
-//     justify-content: center
+@media ( max-width: 768px )
+  .cards
+    justify-content: center
+@media ( max-width: 320px)
+  .price
+    &__title
+      font-size: 18px
+      margin-bottom: 27px
+      max-width: 285px
+    &__subtitle
+      font-size: 14px
