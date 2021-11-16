@@ -302,7 +302,7 @@ img {
 
 /*Импорт стилей для offer*/
 .offer {
-  background: url(../img/offer/offer_bg.png) no-repeat;
+  background: url(../img/offer/offer_bg.jpeg) no-repeat;
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -528,7 +528,7 @@ div.invalid {
 
 /*Стили для секции со свайпером*/
 .portfolio {
-  background: #f5f5f5 url("../img/portfolio/bcg.jpg") repeat-y center left;
+  background: #f5f5f5 url("../img/portfolio/bcg.jpeg") repeat-y center left;
   background-size: 50%;
 }
 
@@ -805,7 +805,7 @@ div.invalid {
 
 /*Стили для блока brif*/
 .brif {
-  background-image: url("../img/brif/brif_bg_orange.jpg"), url("../img/brif/brif_bg.jpg");
+  background-image: url("../img/brif/brif_bg_orange.jpeg"), url("../img/brif/brif_bg.jpeg");
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
@@ -937,11 +937,11 @@ div.invalid-brif {
   .interview__subtitle {
     margin-bottom: 30px;
   }
-  .interview-list__text {
+  .interview__subtitle__text {
     font-size: 14px;
     max-width: 300px;
   }
-  .interview-list__counter {
+  .interview__subtitle__counter {
     margin-right: 15px;
     margin-bottom: 10px;
   }
@@ -961,7 +961,7 @@ div.invalid-brif {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url("../img/brif/brif_bg_orange.jpg"), url("../img/brif/brif_bg.jpg");
+    background-image: url("../img/brif/brif_bg_orange.jpeg"), url("../img/brif/brif_bg.jpeg");
     background-position: top center;
     background-size: 50% 50%, 100% 100%;
     background-repeat: repeat-x, no-repeat;
@@ -982,7 +982,7 @@ div.invalid-brif {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .brif__form {
     padding-left: 0;
   }
