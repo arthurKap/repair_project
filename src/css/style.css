@@ -1015,6 +1015,10 @@ div.invalid-brif {
   }
   .interview-list__text {
     max-width: 235px;
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    margin-right: 15px;
   }
 }
 
