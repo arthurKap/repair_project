@@ -425,6 +425,9 @@ div.invalid {
 }
 
 @media (max-width: 568px) {
+  .offer__input {
+    min-width: 320px;
+  }
   .offer__title {
     font-size: 18px;
     line-height: 1.2;
@@ -927,7 +930,7 @@ div.invalid-brif {
 
 @media (max-width: 1200px) {
   .brif__form {
-    padding-left: 30px;
+    padding-left: 0px;
   }
   .interview {
     padding-right: 30px;
@@ -981,6 +984,16 @@ div.invalid-brif {
   .form__title {
     padding-top: 63px;
     margin-top: 10px;
+  }
+  .interview__subtitle {
+    max-width: 190px;
+  }
+  .interview-list__text {
+    max-width: 235px;
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    margin-right: 15px;
   }
 }
 
