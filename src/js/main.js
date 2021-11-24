@@ -13,9 +13,9 @@ close.addEventListener('click', function() {
   modal.classList.remove('modal_active');
 });
 
-setInterval(function() {
-   modal.classList.remove('modal_active');
-}, 5000);
+// setInterval(function() {
+//    modal.classList.remove('modal_active');
+// }, 5000);
 //Модальное окно
 
 window .addEventListener("scroll", () => {
