@@ -333,7 +333,8 @@
     <!-- /.section steps -->
     <section class="section materials">
       <div class="materials-title">
-        <h2 class="section-title materials-subtitle">Ремонт обойдется Вам дешевле, так как мы используем
+        <h2 class="section-title materials-subtitle wow fadeInDown" data-wow-delay="0.2s">Ремонт обойдется Вам дешевле,
+          так как мы используем
           качественные
           материалы по оптовым ценам</h2>
       </div>
@@ -342,23 +343,29 @@
         <div class="materials-block">
           <div class="materials-cards">
             <div class="materials-card__item">
-              <span class="materials-card__description">Поможем закупить все материалы по оптовым ценам у
+              <span class="materials-card__description wow fadeInLeft" data-wow-delay="0.3s">Поможем закупить все
+                материалы по оптовым ценам у
                 проверенных
                 поставщиков</span>
-              <img src="img/materials/man_1.jpeg" class="materials-card__image" alt="гарантийный лист">
+              <img src="img/materials/man_1.jpeg" class="materials-card__image wow fadeInLeft" data-wow-delay="0.4s"
+                alt="гарантийный лист">
             </div>
             <!-- /.materials__card -->
             <div class="materials-card__item">
-              <span class="materials-card__description">Мы дадим Вам максимальные скидки
+              <span class="materials-card__description wow fadeInLeft" data-wow-delay="0.3s">Мы дадим Вам максимальные
+                скидки
                 у наших партнеров для закупки материалов оптом</span>
-              <img src="img/materials/man_2.jpeg" class="materials-card__image" alt="гарантийный лист">
+              <img src="img/materials/man_2.jpeg" class="materials-card__image wow fadeInLeft" data-wow-delay="0.4s"
+                alt="гарантийный лист">
             </div>
             <!-- /.materials__card -->
-            <div class="materials-card__item">
-              <span class="materials-card__description">Все, что не сможете найти в городе -
+            <div class="materials-card__item wow fadeInLeft">
+              <span class="materials-card__description wow fadeInLeft" data-wow-delay="0.3s">Все, что не сможете найти в
+                городе -
                 поможем заказать у проверенных
                 поставщиков</span>
-              <img src="img/materials/man_3.jpeg" class="materials-card__image" alt="гарантийный лист">
+              <img src="img/materials/man_3.jpeg" class="materials-card__image wow fadeInLeft" data-wow-delay="0.4s"
+                alt="гарантийный лист">
             </div>
             <!-- /.materials__card -->
           </div>
@@ -517,7 +524,25 @@
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
-      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      <!-- <div class="modal-column">
+        <div class="modal-content"></div>
+      </div> -->
+      <div class="modal-column">
+        <h3 class="modal-form__title">Узнайте точную стоимость
+          ремонта по телефону!</h3>
+        <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+        <form action="#" class="modal-form" id="modal-form">
+          <div style="position: relative;">
+            <input type="text" name="username" required class="input modal-form__input" placeholder="Ваше имя">
+          </div>
+          <div style="position: relative;">
+            <input type="tel" name="phone" class="input modal-form__input phone-input" placeholder="Ваш телефон">
+          </div>
+          <button class="button modal-form__button">Узнать стоимость</button>
+          <span class="modal-form__description">Или Вы можете перезвонить нам сами по телефону:</span>
+          <a href="tel:+ 7 (495) 42-251-31" class="modal-form__phone">+ 7 (495) 42-251-31</a>
+        </form>
+      </div>
     </div>
     <!-- /.modal-dialog -->
   </div>

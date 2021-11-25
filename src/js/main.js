@@ -136,4 +136,34 @@ $('#brif-form').validate({
   
 })
 
+/*Валидация формы modal*/ 
+$('#modal-form').validate({
+
+  errorClass: "invalid-modal",
+
+  errorElement: "div",
+  
+  rules: {
+    username: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    phone: {
+      required: true
+    }
+  },
+  messages: {
+    username: {
+      required:"Заполните поле",
+      minlength: jQuery.validator.format("Минимум {0} символа!"),
+      maxlength: jQuery.validator.format("Максимум 15 символов!")
+    },
+    phone: {
+      required: "Заполните поле"
+    }, 
+  }
+  
+})
+
 $(".phone-input").mask("+38(099)999-99-99");

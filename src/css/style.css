@@ -3170,7 +3170,7 @@ div.invalid {
 .modal-dialog {
   position: relative;
   margin: auto;
-  max-width: 450px;
+  max-width: 750px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
@@ -3179,8 +3179,89 @@ div.invalid {
 
 .modal-dialog__close {
   position: absolute;
-  top: 0;
+  top: 10px;
+  right: 10px;
+  background-color: #ffd200;
+  border-radius: 15%;
+}
+
+.modal-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-form__title {
+  max-width: 375px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 52px;
+}
+
+.modal-form__subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 53px;
+}
+
+.modal-form__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.modal-form__input:focus {
+  border: 2px solid #ffd200;
+  outline: none;
+}
+
+.modal-form__button {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.modal-form__description {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.modal-form__phone {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+}
+
+input.invalid-modal {
+  border: solid 1px red;
+}
+
+div.invalid-modal {
+  position: absolute;
+  bottom: -3px;
+  left: 27px;
   right: 0;
+  font-size: 14px;
 }
 
 /*Стили скролла на вверх*/

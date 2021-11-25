@@ -11,12 +11,57 @@
   &-dialog
     position: relative
     margin: auto
-    max-width: 450px
+    max-width: 750px
     width: 90%
     min-width: 200px
     background-color: #fff
     padding: 40px
     &__close
       position: absolute
-      top: 0
-      right: 0
+      top: 10px
+      right: 10px
+      background-color: $main-color
+      border-radius: 15%
+  &-column
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-form
+    display: flex
+    flex-direction: column
+    &__title
+      max-width: 375px
+      text-align: center
+      font-size: 22px
+      margin-bottom: 52px
+    &__subtitle
+      text-align: center
+      font-size: 16px
+      margin-bottom: 53px
+    &__input
+      width: 100%
+      max-width: 370px
+      margin-bottom: 15px
+      &:focus
+        border: 2px solid #ffd200
+        outline: none
+    &__button
+      +bold
+      margin-bottom: 33px
+    &__description
+      font-size: 15px
+      margin-bottom: 13px
+    &__phone
+      text-align: center
+      font-size: 24px
+      +bold
+      text-decoration: none
+      color: $text-color
+input.invalid-modal
+  border: solid 1px red
+div.invalid-modal
+  position: absolute
+  bottom: -3px
+  left: 27px
+  right: 0
+  font-size: 14px
